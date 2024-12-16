@@ -1,0 +1,71 @@
+touch filename.txt - creating new file locally
+
+cd ..-back to folder
+
+cd foldername -go to particular folder name
+
+git init- create local repositry
+
+git clone url-copy of the repositry
+
+git add . -Add all the changes staging
+
+git commit -m "initial commit" - Ready to commit
+
+git remote add origin url
+
+git push origin branch 
+
+git branch branchname-create new branch 
+
+git branch -m branchname-rename for local branch
+
+git checkout branchname-switch to new branch
+
+git push origin branchname-it is pushed new branch to remote
+
+git branch -m old-branch-name new-branch-name -rename for local branch if you are an different branch
+
+git push origin -u new-branch-name -Pushed rename for the remote repositry
+
+git branch -verify the local branch
+
+git push origin --delete <old-branch-name>- Delete  branch on the remotely
+
+git branch -d branchname-delete branch locally
+
+git pull origin master - pull the latest changes remote
+
+git branch -r -check the remote branches
+
+Reslove conflicts
+
+1.git pull origin branchname-create
+Your local changes to the following files would be overwritten by merge:
+Please commit your changes or stash them before you merge.
+git add filename
+git commit -m "message"
+git push origin branchname
+error: failed to push some refs to 'https://github.com/marimuthu-kk-kr/Team_India.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+git pull origin 2019
+conflicts
+remove conflict markers and changes
+git add .
+git commit -m "reslove message"
+git push origin branchname
+
+
+merge branch to master
+
+git checkout master
+git merge ourbranch
+git push origin master
+
+
+
+
+

@@ -1,0 +1,765 @@
+1.Java
+
+It is an programming language
+
+It is an object oriented language
+
+it is used to create desktop application and operating system and mobile application and web based application.
+------------------------------------------------------------------------------------------------------------------
+2.Constructor
+
+Constructor is nothing but block of code.it initialize the value for newly created object.
+
+it is also called special kind of function.
+
+Class name obj=new Class name();
+------------------------------------------------------------------------------------------------------------------
+3.properties of constructor
+
+class name and constructor name should be same
+
+we cannot use any return type
+
+cannot be static, final, synchronized, abstract
+------------------------------------------------------------------------------------------------------------------
+4. Types of constructor
+
+1.Default
+2.No argument
+3.Parameter 
+------------------------------------------------------------------------------------------------------------------
+5.Default Constructor:
+
+when we do not provide any constructor. Compiler will provide. We cannot see naked eye.it is available in class file.it is used to initialize the default value.
+------------------------------------------------------------------------------------------------------------------
+6.No argument constructor
+
+No argument is there
+
+it will allow us to write logic when object is created
+
+this is not default constructor.
+
+when the moment we are creating user defined constructor .compiler will not provide default constructor
+------------------------------------------------------------------------------------------------------------------
+7.Parameter constructor
+
+argument is there
+
+it is initialize user defined value in when object is newly created.
+------------------------------------------------------------------------------------------------------------------
+
+8.Static method
+
+static is the keyword
+
+can be used with class and variable and method
+
+if you make a member static. You can access without creating object.
+------------------------------------------------------------------------------------------------------------------
+static block
+
+it is used initializing value the static variable
+
+gets executed when class loaded in the memory
+
+can have multiple static blocks, execution in written order
+------------------------------------------------------------------------------------------------------------------
+static variable
+
+it is class level variable(it is common for class)
+
+only single copy of static variable is created and shared among all the instances of the class.
+
+ex-static name='mano' then static name='Muthu' print both output is -Muthu- because it is common for all.
+------------------------------------------------------------------------------------------------------------------
+
+static class
+
+A class can be made static if it is nested class, we do not need this because we are not using nested class,.
+------------------------------------------------------------------------------------------------------------------
+Inheritance
+
+Acquiring the properties(data methods)
+
+it is IS-A relationship
+
+The one which takes-child class
+
+the one which gives -parent class
+
+Note
+A child can be a parent of another class
+
+A parent can be a child of another class
+
+how to inherit
+
+using extend keywords
+------------------------------------------------------------------------------------------------------------------
+Types of inheritance
+
+single-A->B
+
+Multilevel-A->B->C
+
+multiple-A+B->C (it is not supported in java) for achieve this we are using interface
+
+Hierarchal-A->B A->C A->D
+
+------------------------------------------------------------------------------------------------------------------
+
+Access modifier
+
+1.Public
+
+2.Private
+
+3.default
+
+4.protected
+
+public-we can access anywhere
+
+private-only with in the class
+
+default-same class and same package
+
+protected-same class and same package and sub class(different package it is an parent and child relationship).
+------------------------------------------------------------------------------------------------------------------
+Polymorphism
+
+polymorphism is the capability of a method to do different things based on the object that is acting upon.
+
+Types of polymorphism
+
+1.overloading/static/early binding/compile
+2.overriding/dynamic/late binding/runtime
+
+overloading
+it should be done in same class
+method name should be same
+passing the parameter should be change or arguments should be change
+access modifier anything
+throwing exception anything
+private method can be overloaded.
+
+overriding
+it should be done parent and child relationship
+method name should be same but implementation should be modified
+passing the parameter should be same 
+access modifier is greater
+throwing exception is greater
+private method can not be override.
+
+------------------------------------------------------------------------------------------------------------------
+
+Abstraction
+
+Hiding the implementation details
+
+How can we achieve abstraction?
+
+1.Abstract class(0 to 100% abstraction)
+2.Interface(100% abstraction)
+
+1.Abstract class:
+
+* If class is having unimplemented method then the method should be declared abstract.
+
+* If a class is having one abstract method then it should be abstract
+
+*It may or may not have implements methods
+
+* A class can be declared abstract even if does not have abstract methods.
+
+*Can we create object for abstract class?
+
+ Nooooo
+
+* If a child does not  implement all the abstract methods of parent class then the child class must need to be declared abstract as well.
+
+2.Interface
+
+* Interface  is like a class but it is not class.
+
+Why like a class but not a class?
+
+* An interface can have methods and variables just like class.
+
+* But variables are public, static, final by default.
+
+* Then methods declared in interface are abstract by default.
+
+Why interface is needed?
+
+To Achieve absolute abstraction and multiple inheritance.
+
+How class can use an interface?
+
+By using implements keywords.
+
+How an interface use another interface?
+
+By using Extend keywords.
+
+Tag or marker interface:
+
+* An empty interface is known as tag or market interface. ex(serializable, Cloneable)
+
+Encapsulation:
+
+process of Binding the data and the methods together into a single unit.
+
+----------------------------------------------------------------------------------------------
+
+String:
+
+String is an object
+
+String implements char sequence, serializable, Cloneable
+
+String is the immutable
+
+We can create two ways to create string
+
+1.Using literally
+
+String var="Mano" 
+
+2.Using new keyword
+
+String var=new String("Mano")
+
+Different between string literal and new keyword
+
+1.String literal memory efficiency is low
+
+2.String new keyword memory efficiency is high
+
+Ex(literal)
+
+String name="Mano"
+
+String name1="Mano"
+
+It will not create new variable just pointer adjust. Like name1-mano and name is going to heap memory then it is eligible for garbage collection.
+
+Ex(new keyword)
+
+String name=new String("Mano")
+
+String name1=new String("Mano");
+
+It will create new object so memory efficiency high.
+
+String is immutable:
+
+Ex
+
+String var="Mano"
+
+String var="Mari"
+
+It is creating new object and existing object it is not changed.
+
+String buffer:
+
+String buffer is an object
+
+String buffer is also character of sequence
+
+string buffer is immutable
+
+it is synchronized
+
+it is also implements char sequence
+
+thread safe
+
+multi thread supporting.
+
+String Builder:
+
+String builder is an object
+
+String buffer is also character of sequence interface
+
+string buffer is immutable
+
+it is non synchronized
+
+it is also implements char sequence interface
+
+thread is not safe.
+-------------------------------------------------------------------
+
+Exception handling:
+
+Exception:
+
+An exception is an undesirable or unexpected event, which occurs during the execution of the program at run time that it disturbs normal flow of the program instruction and it is handled by our program.
+
+Error:
+
+An error is a very severe problem which we can not handle our program. Error and Exception both are different. 
+
+Object->throwable->Exception
+
+Types of Exception:
+
+* Checked Exception(compile time Exception)
+
+Checked exception we can handle very easily because checked exceptions are indicated compiler itself.
+
+* unchecked Exception(run time exception)
+
+unchecked exception are not run until program is run.
+
+Try block:
+
+*This is block where will write our code which may give run time exception.
+
+Catch block:
+
+This is where the exception are handled. Catch block is immediately followed by try block.
+
+Important points:
+
+*try block can have multiple catch block
+
+* if there are multiple catch blocks, they should not be of generic exception type.
+
+* if there are no exception catch block will not get executed.
+
+Finally block:
+
+this is a block of code which will get executed even if the exception occurs or not.
+
+this block contains like closing connection of DB like that.
+
+Important points:
+
+*There is no finally block without a try-catch block. Finally block must be associated with try-catch block.
+
+*finally block is not manta dory. if there is any exception, the finally block will get executed after the corresponding catch block else 
+
+after try block execution the finally block will get executed.
+
+*finally block also can have exception.
+
+* the statement present in the finally block execute even if the try block contains control transfer statements like return, break or continue.
+
+When will not get executed finally block?
+
+* thread is dead 
+
+* when system.exit() is called.
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+Collection:
+
+Collection is an interface.
+
+It is an group of individual objects.
+
+List and set and queue interface implements collection.
+
+Array list and LinkedList and stack and vector implements list.
+
+Array list:
+
+Array list is the class.
+
+Insertion order maintain.
+
+duplicate is allowed.
+
+null element allowed.
+
+if there is no value in array list we can try fetch result is -1.
+
+we can both forward traverse and reverse traverse it is possible using list iterator.
+
+we cannot reverse traverse while using iterator.
+
+data structure is resizable or growable array.
+
+we can insert heterogenies object.(if we are not using homogenies object)
+
+Array list implements random access and serializable and cloneable
+
+random access interface it is used to retrieve the data so in array list searching operation it is good.
+
+Inserting and delete operation is not good for array list.
+
+serializable transfers the data into the network.
+
+Array list is non synchronised.
+
+thread safe - No
+
+default capacity-10
+
+growth rate-current size+ current size/2.
+--------------------------------------------------------------------
+Linked list:
+
+Linked list is the class.
+
+it is an child class of array list
+
+it implements list interface.
+
+it is maintained insertion order
+
+duplicate allowed
+
+null allowed
+
+we can insert heterogenies object.
+
+it is not implements random access so search operation is not good.
+
+it is implements serializable and cloneable interface.
+
+it is suitable for insertion and deletion.
+
+data structure for doubly linked list.
+
+----------------------------------------------------------------------------
+
+Stack:
+
+it is an class
+
+it implements list interface.
+
+it is legacy class
+
+------------------------------------------
+
+Vector:
+
+it is an class
+
+it implements list interface.
+
+it is legacy class
+-------------------------------------------
+
+Set:
+
+Set is an interface.
+
+set implements collection interface.
+
+set child interface sorted set and navigable set.
+
+tree set implements sorted set and navigable set.
+
+tree set is an class.
+
+set child class hash set and linked hash set.
+
+it is not maintain insertion order.
+
+it is not allow duplicate
+
+it is allow null
+
+we can insert heterogenies object.(if we are not using homogenies object).
+
+-------------------------------------------------------------------------------
+
+Hash set:
+
+Hash set is a class
+
+hash set implements set interface.
+
+it is not maintain insertion order.
+
+it is not allow duplicate
+
+it allows null
+
+we can insert heterogenies object.(if we are not using homogenies object).
+
+data structure is hash table which is actually hash map instance.
+
+it is implements serializable and cloneable interface.
+
+data stored on hash code so search operation is very effective.
+
+default capacity -16
+
+fill ration-0.75 or 75%.
+----------------------------------------------------------------------------
+
+Linked hash set:
+
+Linked hash set is an class
+
+it is an child class of hash set
+
+it is maintain insertion order.
+
+it is not allow duplicate
+
+it allows null
+
+we can insert heterogenies object.(if we are not using homogenies object).
+
+data structure is hash table + doubly linked list.
+
+it is implements serializable and cloneable interface.
+
+data stored on hash code so search operation is very effective.
+
+default capacity -16
+
+fill ration-0.75 or 75%.
+--------------------------------------------------------------------------------
+
+Tree set:
+
+Tree set is an class.
+
+it implements sorted set and navigable set.
+
+it is maintain natural sorting order(ascending order)
+
+it is not allow null(we can insert first element until 1.6 version)
+
+it is not allow duplicate.
+
+data structure is binary search tree.
+
+we can not insert heterogenous object(it is not able to compare integer and string)
+
+if we are using generics it must be implements comparable interface. ex(string, integer,)
+
+we can not use string buffer and string builder why because both are not implements comparable interface. If we are using class cast exception is occurs.
+
+Tree set method:
+
+Head set: it will retrieve less value
+
+tail set: it will retrieve higher value along with given value.
+
+subset: it will retrieve in between value for both elements along with starting value.
+
+comparator: it return null value if it is default natural order.
+
+we can do descending order(it will retrieve descending order )
+
+we can use descending iterator
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+Map:
+
+it is an interface
+
+it represents key and value pair.
+
+it is not implements collection interface.
+
+hash map and linked hash map and sorted hap and navigated map implements map.
+------------------------------------------------------------------------------
+
+hash map:
+
+it is an class
+
+hash map implements map
+
+insertion order not maintain.
+
+duplicate key is not allowed but duplicate value is allowed.
+
+if we are using duplicate key it is override.
+
+it allows null value.
+
+data structure is hash table which is actually hash map instance.
+
+it is implements serializable and cloneable interface.
+
+data stored on hash code so search operation is very effective.
+
+default capacity -16
+
+fill ration-0.75 or 75%.
+
+it is not synchronized. so if it has to be used multithreading environment.it has to be synchronized explicitly.
+
+hash map methods:
+keyset-it fetches all keys.
+
+values-it fetches all values.
+
+entry Set-it fetches the all keys and values.
+--------------------------------------------------------------------
+
+
+linked hash map:
+
+it is an class.
+
+it is an child class of hash map.
+
+insertion order maintained.
+
+duplicate key is not allowed but duplicate values allowed.
+
+if we are using duplicate key. Value is override.
+
+null value allowed.
+----------------------------------------------------------------
+Tree map:
+
+it is an class
+
+it  implements sorted map and navigable map 
+
+insertion order natural sorting order.
+
+duplicate key is not allowed and duplicate value is allowed.
+
+if we are using duplicate key.it is override the values.
+
+null keys is not allowed.
+
+if we are using null key then it should be an null pointer exception.
+
+generics should be implements comparable interface.
+----------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
